@@ -1,31 +1,31 @@
 :root {
   --cinza: #aaa;
-  --vermelha: #e93d50;
+  --laranja: #e9743d;
   --vermelha-escura: #af303f;
-  --branca: #fff;
-  --luz: rgb(229, 255, 0);
+  --laranja-claro: #f1e0a9;
+  --luz: rgb(255, 166, 0);
 }
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  background: linear-gradient(45deg, #dfd4a7 0%,#e3b529 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; 
   min-height: 100vh;
 }
 
 h1 {
-  color: var(--branca);
-  margin-bottom: 20px;
-  font-size: 2rem;
+  color: var(--laranja-claro);
+  margin-bottom: 30px;
+  font-size: 5rem;
 }
 
 .teclado {
   background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
-  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
-  border-radius: 30px;
+  box-shadow: 4px 6px 0 4px #f6c075, 18px 15px 30px #000;
+  border-radius: 15px;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -33,14 +33,14 @@ h1 {
 }
 
 .tecla {
-  background-color: var(--branca);
-  border-radius: 30px;
-  box-shadow: 3px 3px 0 var(--cinza);
-  color: var(--vermelha);
+  background-color: var(--laranja-claro);
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 var(--cinza), 2px 3px 5px #000;
+  color: var(--laranja);
   cursor: pointer;
   height: 120px;
   font-size: 1.75em;
-  font-weight: bold;
+  font-weight: 'Montserrat', sans-serif;
   line-height: 120px;
   text-align: center;
   width: 120px;
@@ -48,10 +48,10 @@ h1 {
 
 .tecla.ativa,
 .tecla:active {
-  background-color: var(--vermelha);
-  border: 4px solid  var(--vermelha);
+  background-color: var(--laranja);
+  border: 4px solid  var(--laranja);
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
-  color: var(--branca);
+  color: var(--laranja-claro);
   outline: none;
 }
 
